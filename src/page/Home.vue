@@ -2,7 +2,7 @@
   <div>
     <Title />
     <Point />
-    <Health />
+    <Card />
     <Daily-date />
   </div>
 </template>
@@ -10,11 +10,11 @@
 <script>
 import Title from "../components/Title";
 import Point from "../components/Point";
-import Health from "../components/Health";
+import Card from "../components/Card";
 import DailyDate from "../components/dailyDate.vue";
 export default {
   name: "Home",
-  components: { Title, Point, Health, DailyDate },
+  components: { Title, Point, Card, DailyDate },
 };
 </script>
 

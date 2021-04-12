@@ -1,8 +1,12 @@
 <template>
-  <div class="title">
-    <i class="el-icon-menu menuIcon"></i>
-    <div class="titleText">우리가족 건강지킴이</div>
-    <i class="el-icon-user titleIcon"></i>
+  <div class="primaryColor">
+    <el-row :gutter="20">
+      <el-col :span="16">
+        <i class="el-icon-menu menuIcon"></i>
+        <div class="titleText">우리가족 건강지킴이</div>
+      </el-col>
+      <el-col :span="8"><i class="el-icon-user"></i></el-col>
+    </el-row>
   </div>
 </template>
 
@@ -13,24 +17,15 @@ export default {
 </script>
 
 <style scoped>
-.title {
-  position: relative;
-  margin-top: 7%;
-}
 .titleText {
   display: inline-block;
-  font-size: 125%;
   font-weight: 800;
-  color: #0c039e;
+  font-size: 22px;
 }
-.titleIcon {
-  position: absolute;
-  left: 94%;
-  font-size: 158%;
+.el-icon-user {
+  font-size: 16px;
 }
-
 .menuIcon {
-  font-size: x-large;
-  color: #0c039e;
+  font-size: 18px;
 }
 </style>

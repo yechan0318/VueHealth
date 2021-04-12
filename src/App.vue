@@ -20,4 +20,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   margin: 0 4%;
 }
+
+.primaryColor {
+  color: #0c039e;
+}
 </style>

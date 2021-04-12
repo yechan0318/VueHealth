@@ -15,7 +15,8 @@ export default {
 <style scoped>
 .pointBox {
   position: relative;
-  border: 1px solid;
+  border: 1px solid #dedede;
+  background-color: white;
   margin-top: 13px;
   width: 100%;
   height: 26px;
