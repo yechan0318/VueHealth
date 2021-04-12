@@ -23,7 +23,8 @@ export default {
   font-size: 22px;
 }
 .el-icon-user {
-  font-size: 16px;
+  font-size: 25px;
+  margin-left: 80px;
 }
 .menuIcon {
   font-size: 18px;

@@ -17,21 +17,23 @@
         </div>
       </el-col>
     </el-row>
-    <el-row :gutter="24">
+    <el-row :gutter="3">
       <el-col :span="6">
-        <div class="card">
+        <div class="card" style="background-color: #f8a190">
           <i class="el-icon-edit"></i><br />가족건강수첩
         </div> </el-col
       ><el-col :span="6">
-        <div class="card">
+        <div class="card" style="background-color: #db7e9d">
           <i class="el-icon-edit"></i><br />추천건강식품
         </div> </el-col
       ><el-col :span="6">
-        <div class="card">
+        <div class="card" style="background-color: #a9aae0">
           <i class="el-icon-edit"></i><br />보험청구
         </div> </el-col
       ><el-col :span="6">
-        <div class="card"><i class="el-icon-edit"></i><br />병원/약국찾기</div>
+        <div class="card" style="background-color: #c4d684">
+          <i class="el-icon-edit"></i><br />병원/약국찾기
+        </div>
       </el-col>
     </el-row>
   </div>
@@ -54,12 +56,13 @@ export default {
   text-align: center;
   padding-top: 20px;
   border-radius: 6px;
+  font-size: 14px;
 }
 .healthCheck {
   background-color: #8d8d8d;
 }
 .el-row {
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 .el-col {
   border-radius: 4px;
