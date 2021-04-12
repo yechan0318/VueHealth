@@ -1,21 +1,43 @@
 <template>
-  <div class="box">
-    <div>
-      <div class="dateText">오늘의 일정</div>
-      <div class="boxIcon">
-        see all<i class="el-icon-circle-plus plusIcon"></i>
+  <div>
+    <div class="box">
+      <div>
+        <el-row :gutter="20">
+          <el-col :span="16">
+            <div class="grid-content dateText">오늘의 일정</div>
+          </el-col>
+          <el-col :span="8">
+            <div class="grid-content dateTextIcon">
+              see all <i class="el-icon-circle-plus plusIcon"></i>
+            </div>
+          </el-col>
+        </el-row>
       </div>
     </div>
     <div class="detailBorder">
-      <div class="todayText">오늘 약/병원</div>
-      <div class="todayBox">아침</div>
-      <div class="stateClear">완료</div>
-      <div class="todayBox magin-5">점심</div>
-      <div class="stateClear">완료</div>
-      <div class="todayBox magin-5">저녁</div>
-      <div class="stateYet">예정</div>
-      <div class="todayBox magin-5">취침전</div>
-      <div class="stateNone">없음</div>
+      <el-row>
+        <el-col :span="24">
+          <div class="grid-content todayText">오늘 약/병원</div>
+        </el-col>
+      </el-row>
+      <el-row>
+        <el-col :span="6"
+          ><div class="todayBox">아침</div>
+          <div class="stateClear">완료</div></el-col
+        >
+        <el-col :span="6"
+          ><div class="todayBox">점심</div>
+          <div class="stateClear">완료</div></el-col
+        >
+        <el-col :span="6"
+          ><div class="todayBox">저녁</div>
+          <div class="stateYet">예정</div></el-col
+        >
+        <el-col :span="6"
+          ><div class="todayBox">취침전</div>
+          <div class="stateNone">없음</div></el-col
+        >
+      </el-row>
       <hr class="hr" />
       <div>
         <div class="todayText">오늘 걷기</div>
@@ -26,8 +48,14 @@
           :stroke-width="20"
           class="todayGoal"
         ></el-progress>
-        <div class="now">현재 500</div>
-        <div class="now goal">목표 5000</div>
+        <el-row>
+          <el-col :span="18">
+            <div class="now">현재 500</div>
+          </el-col>
+          <el-col :span="6">
+            <div class="now">목표 5000</div>
+          </el-col>
+        </el-row>
       </div>
     </div>
   </div>
@@ -50,13 +78,11 @@ export default {
 
 <style scoped>
 .box {
-  position: relative;
-  border: 1px solid;
+  border: 1px solid #ffff;
   margin-top: 13px;
-  width: 100%;
-  height: 26px;
-  border-radius: 4px;
+  border-radius: 7px;
   background-color: rgb(2, 49, 180);
+  padding: 3px;
 }
 .dateText {
   margin-left: 3%;
@@ -65,11 +91,10 @@ export default {
   font-weight: bold;
   font-family: sans-serif;
   display: inline-block;
-  position: fixed;
   margin-top: 5px;
 }
 
-.boxIcon {
+.dateTextIcon {
   position: fixed;
   display: inline-block;
   font-family: sans-serif;
@@ -84,23 +109,19 @@ export default {
   font-size: 20%;
 }
 .detailBorder {
-  border: 1px solid rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
-  position: sticky;
-  margin-top: 27px;
-  height: 500%;
   border-radius: 4px;
 }
 .todayBox {
   display: inline-block;
-  margin-left: 2%;
   color: rgb(2, 49, 180);
   font-size: 16px;
   font-family: sans-serif;
+  margin-left: 4px;
 }
 .todayText {
   font-family: sans-serif;
-  margin-top: 3px;
+  margin-top: 8px;
   margin-left: 7px;
   margin-bottom: 3px;
   font-weight: 700;
@@ -108,25 +129,27 @@ export default {
 }
 .stateClear {
   display: inline-block;
-  border: 1px solid;
+  border: 1px solid #ffff;
   border-radius: 6px;
   background-color: rgb(2, 49, 180);
   font-size: 14px;
-  color: #fff;
+  color: #ffff;
   padding: 0px 3px;
   font-weight: 700;
   text-align: center;
+  margin-left: 2px;
 }
 .stateNone {
   display: inline-block;
-  border: 1px solid;
+  border: 1px solid #ffff;
   border-radius: 6px;
   background-color: rgb(2, 49, 180);
   font-size: 14px;
-  color: #fff;
+  color: #ffff;
   padding: 0px 3px;
   font-weight: 700;
   text-align: center;
+  margin-left: 2px;
 }
 .stateYet {
   display: inline-block;
@@ -138,9 +161,7 @@ export default {
   padding: 0px 3px;
   font-weight: 700;
   text-align: center;
-}
-.magin-5 {
-  margin-left: 5%;
+  margin-left: 2px;
 }
 .hr {
   width: 95%;
@@ -152,13 +173,18 @@ export default {
 }
 .now {
   font-size: 13px;
-  position: sticky;
-  margin-left: 2%;
-  display: inline-block;
+  margin-left: 4px;
+  color: #0c039e;
+  font-weight: 500;
 }
-.goal {
-  position: sticky;
-  left: 79%;
-  display: inline-block;
+.el-col {
+  border-radius: 4px;
+}
+.grid-content {
+  border-radius: 4px;
+}
+.row-bg {
+  padding: 10px 0;
+  background-color: #f9fafc;
 }
 </style>
