@@ -4,6 +4,7 @@
     <Point />
     <Card />
     <Daily-date />
+    <router-link :to="{ name: 'Walk' }">Walk</router-link>
   </div>
 </template>
 
