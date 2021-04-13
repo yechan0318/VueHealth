@@ -4,12 +4,12 @@
     <el-row>
       <el-col :span="20"
         ><div class="eventImg">
-          <img src="@/assets/aprilEvent.jpeg " style="width: 100%" />
+          <img src="@/assets/friendsEvent.jpeg" style="width: 100%" />
         </div>
       </el-col>
       <el-col :span="20"
         ><div class="eventImg">
-          <img src="@/assets/friendsEvent.jpeg" style="width: 100%" />
+          <img src="@/assets/aprilEvent.jpeg" style="width: 100%" />
         </div>
       </el-col>
     </el-row>
@@ -23,6 +23,7 @@ export default {};
 <style scoped>
 .Event-Box {
   background-color: #ffff;
+  padding-top: 15px;
 }
 .eventText {
   font-size: 17px;

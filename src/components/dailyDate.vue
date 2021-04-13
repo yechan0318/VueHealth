@@ -42,17 +42,17 @@
       <div>
         <div class="todayText">오늘 걷기</div>
         <el-progress
-          :percentage="10"
+          :percentage="64"
           :color="customColor"
           :text-inside="true"
           :stroke-width="20"
           class="todayGoal"
         ></el-progress>
         <el-row>
-          <el-col :span="18">
+          <el-col :span="19">
             <div class="now">현재 500</div>
           </el-col>
-          <el-col :span="6">
+          <el-col :span="5">
             <div class="now">목표 5000</div>
           </el-col>
         </el-row>
@@ -79,14 +79,14 @@ export default {
 <style scoped>
 .box {
   border: 1px solid #ffff;
-  margin-top: 13px;
+  margin-top: 20px;
   border-radius: 7px;
   background-color: rgb(2, 49, 180);
   padding: 3px;
 }
 .dateText {
   margin-left: 3%;
-  font-size: 15px;
+  font-size: 17px;
   color: #ffff;
   font-weight: bold;
   font-family: sans-serif;
@@ -95,22 +95,21 @@ export default {
 }
 
 .dateTextIcon {
-  position: fixed;
   display: inline-block;
   font-family: sans-serif;
-  left: 74%;
+  margin-left: 33px;
+  padding-top: 4px;
   color: #ffff;
   font-weight: bold;
   font-size: 15px;
-  padding-top: 1%;
 }
 .plusIcon {
-  margin: 5px;
-  font-size: 20%;
+  font-size: 14px;
 }
 .detailBorder {
   background-color: rgb(255, 255, 255);
   border-radius: 4px;
+  padding: 0px 10px;
 }
 .todayBox {
   display: inline-block;
@@ -121,8 +120,8 @@ export default {
 }
 .todayText {
   font-family: sans-serif;
-  margin-top: 8px;
-  margin-left: 7px;
+  margin-top: 16px;
+  margin-left: 3px;
   margin-bottom: 3px;
   font-weight: 700;
   font-size: 16px;
@@ -165,15 +164,16 @@ export default {
 }
 .hr {
   width: 95%;
-  margin: 9px;
+  margin: 10px 6px;
 }
 .todayGoal {
-  margin-left: 1%;
   width: 97%;
+  margin-left: 2px;
 }
 .now {
+  margin-bottom: 10px;
   font-size: 13px;
-  margin-left: 4px;
+  margin-left: 6px;
   color: #0c039e;
   font-weight: 500;
 }
