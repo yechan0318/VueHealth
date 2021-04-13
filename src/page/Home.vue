@@ -22,7 +22,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .homepageWrap {
   background-color: #f4f3f0;
 }

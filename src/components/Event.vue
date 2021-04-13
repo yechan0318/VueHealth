@@ -3,13 +3,18 @@
     <el-main>
       <div class="Event-Box">
         <div class="eventText">이벤트</div>
-        <div class="eventImg">
-          <img src="@/assets/aprilEvent.jpeg " style="width: 100%" />
-        </div>
-
-        <div class="eventImg">
-          <img src="@/assets/friendsEvent.jpeg" style="width: 100%" />
-        </div>
+        <el-row>
+          <el-col :span="20"
+            ><div class="eventImg">
+              <img src="@/assets/friendsEvent.jpeg" style="width: 100%" />
+            </div>
+          </el-col>
+          <el-col :span="20"
+            ><div class="eventImg">
+              <img src="@/assets/aprilEvent.jpeg" style="width: 100%" />
+            </div>
+          </el-col>
+        </el-row>
       </div>
     </el-main>
   </el-container>
@@ -22,6 +27,7 @@ export default {};
 <style scoped>
 .Event-Box {
   background-color: #ffff;
+  padding-top: 15px;
 }
 .eventText {
   font-size: 17px;
