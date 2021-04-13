@@ -1,5 +1,5 @@
 <template>
-  <el-container>
+  <el-container class="homepageWrap">
     <el-main>
       <Title />
       <Point />
@@ -24,4 +24,7 @@ export default {
 </script>
 
 <style>
+.homepageWrap {
+  background-color: #f4f3f0;
+}
 </style>
