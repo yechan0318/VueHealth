@@ -1,19 +1,18 @@
 <template>
-  <div class="Event-Box">
-    <div class="eventText">이벤트</div>
-    <el-row>
-      <el-col :span="20"
-        ><div class="eventImg">
+  <el-container>
+    <el-main>
+      <div class="Event-Box">
+        <div class="eventText">이벤트</div>
+        <div class="eventImg">
           <img src="@/assets/aprilEvent.jpeg " style="width: 100%" />
         </div>
-      </el-col>
-      <el-col :span="20"
-        ><div class="eventImg">
+
+        <div class="eventImg">
           <img src="@/assets/friendsEvent.jpeg" style="width: 100%" />
         </div>
-      </el-col>
-    </el-row>
-  </div>
+      </div>
+    </el-main>
+  </el-container>
 </template>
 
 <script>
@@ -28,7 +27,6 @@ export default {};
   font-size: 17px;
   font-family: sans-serif;
   font-weight: bold;
-  margin-left: 20px;
   margin-bottom: 5px;
 }
 .el-col {
@@ -37,9 +35,5 @@ export default {};
 .row-bg {
   padding: 10px 0;
   background-color: #f9fafc;
-}
-.eventImg {
-  margin-left: 20px;
-  width: 105%;
 }
 </style>
