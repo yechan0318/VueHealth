@@ -30,13 +30,15 @@
           >
         </div></el-col
       >
-      <el-col :span="6"
-        ><div class="icon">
-          <i class="el-icon-s-flag"
-            ><br />
-            <div class="iconText">챌린지</div></i
-          >
-        </div>
+      <el-col :span="6">
+        <router-link :to="{ name: 'Challenge' }">
+          <div class="icon">
+            <i class="el-icon-s-flag"
+              ><br />
+              <div class="iconText">챌린지</div></i
+            >
+          </div>
+        </router-link>
       </el-col>
     </el-row>
   </div>
