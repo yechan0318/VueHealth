@@ -3,12 +3,17 @@
     <el-row :gutter="3">
       <el-col :span="12">
         <div class="card" style="background-color: #8d8d8d">
-          <i class="el-icon-edit"></i>검진결과
+          <IconBase width="50" height="50" icon-name="checkResult"
+            ><CheckResult /></IconBase
+          >검진결과
         </div>
       </el-col>
       <el-col :span="6">
         <div class="card" style="background-color: #8bcde7">
-          <i class="el-icon-edit"></i><br />복약관리
+          <IconBase width="45" height="50" icon-name="phillManage"
+            ><PhillManage
+          /></IconBase>
+          <br />복약관리
         </div>
       </el-col>
       <el-col :span="6">
@@ -40,8 +45,17 @@
 </template>
 
 <script>
+import IconBase from "./IconBase.vue";
+import CheckResult from "../assets/icons/checkResult.vue";
+import PhillManage from "../assets/icons/phillManage.vue";
+
 export default {
   name: "Health",
+  components: {
+    IconBase,
+    CheckResult,
+    PhillManage,
+  },
 };
 </script>
 
@@ -54,7 +68,8 @@ export default {
   color: white;
   font-weight: bold;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   border-radius: 6px;
   font-size: 14px;
 }
