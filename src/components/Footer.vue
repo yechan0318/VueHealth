@@ -12,16 +12,16 @@
           </div></router-link
         ></el-col
       >
-      <el-col :span="6"
-        ><router-link :to="{ name: 'Walk' }"
+      <el-col :span="6">
+        <router-link :to="{ name: 'Walk' }"
           ><div class="icon">
-            <i class="el-icon-chat-square"
-              ><br />
-              <div class="iconText">워크/커뮤니티</div></i
-            >
+            <IconBase width="45" height="50" icon-name="WalkingMan"
+              ><WalkingMan
+            /></IconBase>
+            <div class="iconText">워크/커뮤니티</div>
           </div></router-link
-        ></el-col
-      >
+        >
+      </el-col>
       <el-col :span="6"
         ><div class="icon">
           <i class="el-icon-shopping-cart-full"
@@ -30,22 +30,29 @@
           >
         </div></el-col
       >
-      <el-col :span="6">
-        <router-link :to="{ name: 'Challenge' }">
-          <div class="icon">
-            <i class="el-icon-s-flag"
-              ><br />
-              <div class="iconText">챌린지</div></i
-            >
-          </div>
-        </router-link>
+      <el-col :span="6"
+        ><div class="icon">
+          <IconBase width="45" height="45" icon-name="Challenger"
+            ><Challenger
+          /></IconBase>
+          <div class="iconText">챌린지</div>
+        </div>
       </el-col>
     </el-row>
   </div>
 </template>
 
 <script>
-export default {};
+import Challenger from "../assets/icons/challenger";
+import WalkingMan from "../assets/icons/walkingMan";
+import IconBase from "./IconBase.vue";
+export default {
+  components: {
+    IconBase,
+    Challenger,
+    WalkingMan,
+  },
+};
 </script>
 
 <style scoped>
