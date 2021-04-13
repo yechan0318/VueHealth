@@ -23,14 +23,12 @@
         ></el-col
       >
       <el-col :span="6"
-        ><router-link :to="{ name: 'Shop' }"
-          ><div class="icon">
-            <i class="el-icon-shopping-cart-full"
-              ><br />
-              <div class="iconText">쇼핑</div></i
-            >
-          </div></router-link
-        ></el-col
+        ><div class="icon">
+          <i class="el-icon-shopping-cart-full"
+            ><br />
+            <div class="iconText">쇼핑</div></i
+          >
+        </div></el-col
       >
       <el-col :span="6"
         ><div class="icon">
