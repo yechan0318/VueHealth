@@ -8,7 +8,6 @@
     </el-main>
   </el-container>
   <Event />
-  <router-link :to="{ name: 'Walk' }">Walk</router-link>
 </template>
 
 <script>
