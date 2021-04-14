@@ -9,7 +9,7 @@
           iconViewBox="0 0 17.08 17.31"
           ><LogoIcon
         /></IconBase>
-        <div class="titleText ml-5">건강지킴이 HELP ME</div>
+        <div class="titleText ml-5">건강지킴이 헬미</div>
       </el-col>
       <el-col :span="8"><i class="el-icon-user"></i></el-col>
     </el-row>
