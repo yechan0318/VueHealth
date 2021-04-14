@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <hr />
+    <hr style="margin-top: 0" />
     <el-row :gutter="20">
       <el-col :span="6"
         ><router-link :to="{ name: 'Home' }"
