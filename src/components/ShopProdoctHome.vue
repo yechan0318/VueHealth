@@ -10,19 +10,19 @@
     <el-row>
       <el-col :span="8"
         ><div class="newProdoct">
-          <img src="@/assets/danoX.jpeg " style="width: 100%" />다노X디디미니
+          <img src="@/assets/danoX.jpeg " style="width: 100%" />헬미X디디미니
           <br />밀키트 2종
         </div></el-col
       >
       <el-col :span="8"
         ><div class="newProdoct">
-          <img src="@/assets/danoCube.jpeg " style="width: 100%" />다노 닭가슴살
+          <img src="@/assets/danoCube.jpeg " style="width: 100%" />헬미 닭가슴살
           <br />큐브 3종
         </div></el-col
       >
       <el-col :span="8"
         ><div class="newProdoct">
-          <img src="@/assets/danoRice.jpeg " style="width: 100%" />다노 자이언트
+          <img src="@/assets/danoRice.jpeg " style="width: 100%" />헬미 자이언트
           <br />브라운라이스소울
         </div></el-col
       >
@@ -35,13 +35,13 @@
       >
       <el-col :span="8"
         ><div class="newProdoct">
-          <img src="@/assets/danoTea.jpeg " style="width: 100%" />다노 클린티
+          <img src="@/assets/danoTea.jpeg " style="width: 100%" />헬미 클린티
           2종
         </div></el-col
       >
       <el-col :span="8"
         ><div class="newProdoct">
-          <img src="@/assets/danoCheeze.jpeg " style="width: 100%" />다노
+          <img src="@/assets/danoCheeze.jpeg " style="width: 100%" />헬미
           구워먹는 <br />치즈
         </div></el-col
       >
