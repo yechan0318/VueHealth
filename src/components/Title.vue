@@ -2,8 +2,14 @@
   <div class="primaryColor">
     <el-row :gutter="20">
       <el-col :span="16">
-        <i class="el-icon-menu menuIcon"></i>
-        <div class="titleText">우리가족 건강지킴이</div>
+        <IconBase
+          width="25"
+          height="25"
+          icon-name="LogoIcon"
+          iconViewBox="0 0 17.08 17.31"
+          ><LogoIcon
+        /></IconBase>
+        <div class="titleText ml-5">건강지킴이 HELP ME</div>
       </el-col>
       <el-col :span="8"><i class="el-icon-user"></i></el-col>
     </el-row>
@@ -11,8 +17,15 @@
 </template>
 
 <script>
+import IconBase from "./IconBase";
+import LogoIcon from "../assets/icons/logoIcon";
+
 export default {
   name: "Title",
+  components: {
+    IconBase,
+    LogoIcon,
+  },
 };
 </script>
 

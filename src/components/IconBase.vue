@@ -3,7 +3,7 @@
     xmlns="http://www.w3.org/2000/svg"
     :width="width"
     :height="height"
-    viewBox="0 0 35.52 31.2"
+    :viewBox="iconViewBox"
     :aria-labelledby="iconName"
     role="presentation"
   >
@@ -32,6 +32,10 @@ export default {
     iconColor: {
       type: String,
       default: "currentColor",
+    },
+    iconViewBox: {
+      type: String,
+      default: "0 0 35.52 31.2",
     },
   },
 };
