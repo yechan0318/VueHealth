@@ -1,6 +1,10 @@
 <template>
   <div>
     <router-view></router-view>
+    <br />
+    <br />
+    <br />
+    <br />
     <Footer />
   </div>
 </template>
@@ -35,6 +39,9 @@ export default {
 }
 .mt-5 {
   margin-top: 5px;
+}
+.mb-5 {
+  margin-bottom: 5px;
 }
 .ml-5 {
   margin-left: 5px;

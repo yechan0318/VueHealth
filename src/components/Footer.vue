@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="footer">
     <hr />
     <el-row :gutter="20">
       <el-col :span="6"
@@ -31,28 +31,32 @@
         >
       </el-col>
       <el-col :span="6"
-        ><div class="icon">
-          <IconBase
-            width="45"
-            height="45"
-            icon-name="FooterCart"
-            iconViewBox="0 0 21.41 27.71"
-            ><FooterCart /></IconBase
-          ><br />
-          <div class="iconText">쇼핑</div>
-        </div></el-col
+        ><router-link :to="{ name: 'Shop' }"
+          ><div class="icon">
+            <IconBase
+              width="45"
+              height="45"
+              icon-name="FooterCart"
+              iconViewBox="0 0 21.41 27.71"
+              ><FooterCart /></IconBase
+            ><br />
+            <div class="iconText">쇼핑</div>
+          </div></router-link
+        ></el-col
       >
       <el-col :span="6"
-        ><div class="icon">
-          <IconBase
-            width="45"
-            height="45"
-            icon-name="Challenger"
-            iconViewBox="0 0 29.14 20.72"
-            ><Challenger
-          /></IconBase>
-          <div class="iconText">챌린지</div>
-        </div>
+        ><router-link :to="{ name: 'Challenge' }">
+          <div class="icon">
+            <IconBase
+              width="45"
+              height="45"
+              icon-name="Challenger"
+              iconViewBox="0 0 29.14 20.72"
+              ><Challenger
+            /></IconBase>
+            <div class="iconText">챌린지</div>
+          </div></router-link
+        >
       </el-col>
     </el-row>
   </div>
@@ -83,5 +87,16 @@ export default {
 .iconText {
   font-size: 14px;
   font-weight: 700;
+}
+a {
+  color: #00000073;
+  text-decoration: none;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
 }
 </style>

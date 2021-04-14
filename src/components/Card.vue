@@ -3,9 +3,14 @@
     <el-row :gutter="3">
       <el-col :span="12">
         <div class="card" style="background-color: #8d8d8d">
-          <IconBase width="50" height="50" icon-name="checkResult"
-            ><CheckResult /></IconBase
-          >검진결과
+          <IconBase
+            width="55"
+            height="60"
+            icon-name="checkResult"
+            iconViewBox="0 0 43 36.94"
+            ><CheckResult
+          /></IconBase>
+          <div class="checkResult">검진결과</div>
         </div>
       </el-col>
       <el-col :span="6">
@@ -108,8 +113,7 @@ export default {
   border-radius: 4px;
   min-height: 36px;
 }
-
-.el-icon-edit {
-  font-size: 200%;
+.checkResult {
+  display: inline-block;
 }
 </style>
